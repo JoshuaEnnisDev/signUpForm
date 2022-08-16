@@ -19,12 +19,20 @@
 
 body{
     display: flex;
+    justify-content: center;
+    background-color: black;
+}
+.container{
+    display: flex;
+    width: 80%;
+   
 }
 
 .column{
     display: flex;
     flex-direction: column;
     height:100vh;
+    width: 100%;
     
 }
 #background-img{
@@ -39,13 +47,12 @@ body{
 #sign-up{
     background-color: white;
     flex: 2;
-    justify-content: center;
     width:100%
 }
+#sign-up .row{
+    padding-left: 4vw;
+}
 .row{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     
 }
@@ -59,7 +66,6 @@ body{
     display: flex;
 }
 img{
-    src:url('../assets/odin-lined.png');
     height:100%;
     width: auto;
 }
@@ -74,11 +80,14 @@ img{
  height: 30vh;
  display: flex;
  flex-direction: column;
+ align-items: flex-start;
+ justify-content: flex-end;
 }
 
-.header p{
+p{
     font-size: 24px;
-    width: 80%;
+    padding-right: 5vw;
+    padding-bottom: 3vh;
     font-weight: 600;
 }
 
@@ -87,9 +96,63 @@ img{
     display: flex;
 }
 
+.column .content{
+    width: 70%;
+    column-gap: 5vw;
+    
+}
+.column .content p{
+    padding-top: 3vh;
+   
+}
+
 .footer{
     background-color: aliceblue;
     display: flex;
     height: 30vh;
+    justify-content: space-evenly;
+    padding-left: 4vw;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    border-radius: 5px;
+    border:1px solid rgb(235, 223, 223);
+    height: 3vh;
+    width:15vw;
+}
+button{
+    font-size: large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height:5vh;
+    width:12vw;
+    background-color: rgb(71, 100, 71);
+    color:white;
+    border-radius: 10px; 
+}
+.footer-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 3vh;
+    gap:20px;
+}
+.footer p {
+    font-size: 16px;
+}
+a{
+    color:  rgb(71, 100, 71);
+    text-decoration: none;
+}
+label{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
+    color:rgb(0, 0, 0, 0.6);
+
+    font-weight: 600;
 }
 
