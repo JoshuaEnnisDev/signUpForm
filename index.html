@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
-    <style src="main.js"></style>
+    <script src="main.js" defer></script>
     <title>Sign Up Form</title>
 </head>
 <body>
@@ -27,47 +27,49 @@
             
             <p>You <em>know</em> you want to.</p>
         </div>
-        <div class="column content">
-            <div class="row">
-                <p>Let's do this!</p>
+        <form method='get'>
+            <div class="column content">
+                <div class="row">
+                    <p>Let's do this!</p>
+                </div>
+                <div class="row content">
+                    <div class="input-container" >
+                        <label>FIRST NAME</label>
+                        <input required type="text" name="firstname">
+                    </div>
+                    <div class=input-container>
+                        <label>LAST NAME</label>
+                        <input required type="text" name="lastname">
+                    </div>
+                </div>
+                <div class="row content">
+                    <div class="input-container" >
+                        <label>EMAIL</label>
+                        <input type="email" required name="email">
+                    </div>
+                    <div class=input-container>
+                        <label>PHONE NUMBER</label>
+                        <input required type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx" name="phone">
+                    </div>
+                </div>
+                <div class="row content" id="shadow">
+                    <div class="input-container" >
+                        <label>PASSWORD</label>
+                        <input required type="password" name="password" id="password">
+                    </div>
+                    <div class=input-container>
+                        <label>CONFIRM PASSWORD</label>
+                        <input required type="password" name="confirm" id="confirm">
+                    </div>
+                </div>
             </div>
-            <div class="row content">
-                <div class="input-container" >
-                    <label>FIRST NAME</label>
-                    <input type="text">
-                </div>
-                <div class=input-container>
-                    <label>LAST NAME</label>
-                    <input type="text">
+                <div class="row footer">
+                    <div class="footer-content">
+                    <button type ='submit'>Create Account</button>    
+                    <p>Already have an account? <a href="#">Log in</a></p>
                 </div>
             </div>
-            <div class="row content">
-                <div class="input-container" >
-                    <label>EMAIL</label>
-                    <input type="text">
-                </div>
-                <div class=input-container>
-                    <label>PHONE NUMBER</label>
-                    <input type="text">
-                </div>
-            </div>
-            <div class="row content" id="shadow">
-                <div class="input-container" >
-                    <label>PASSWORD</label>
-                    <input type="text">
-                </div>
-                <div class=input-container>
-                    <label>CONFIRM PASSWORD</label>
-                    <input type="text">
-                </div>
-            </div>
-        </div>
-        <div class="row footer">
-            <div class="footer-content">
-                <button>Create Account</button>    
-                <p>Already have an account? <a href="#">Log in</a></p>
-            </div>
-        </div>
+        </form>
     </div>
 </div>
     

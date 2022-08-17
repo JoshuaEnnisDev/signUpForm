@@ -119,10 +119,15 @@ p{
 }
 
 input{
+    border-style: outset;
     border-radius: 5px;
-    border:1px solid rgb(235, 223, 223);
-    height: 3vh;
+    border:3px solid #E5E7EB;
+    height: 4vh;
     width:15vw;
+}
+input:focus{
+    border:5px solid blue;
+    box-shadow: 0px 0px 5px 2px  gray;
 }
 button{
     font-size: large;
@@ -145,7 +150,7 @@ button{
     font-size: 16px;
 }
 a{
-    color:  rgb(71, 100, 71);
+    color: #596D48;
     text-decoration: none;
 }
 label{
